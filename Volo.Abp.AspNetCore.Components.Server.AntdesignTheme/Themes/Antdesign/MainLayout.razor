@@ -1,0 +1,20 @@
+﻿@inherits LayoutComponentBase
+<CascadingValue Value="false" Name="Collapsed">
+    <AntDesign.ProLayout.BasicLayout Logo="_logoUri" MenuData="_menuData">
+    <RightContentRender>
+        <RightContent />
+    </RightContentRender>
+    <ChildContent>
+        @Body
+    </ChildContent>
+    <FooterRender>
+        <div class="ant-pro-global-footer">
+            <div class="ant-pro-global-footer-copyright">
+                Copyright <AntDesign.Icon Type="copyright" />
+                @*<a href="@AntSettingState.Value.CopyrightUrl"> @AntSettingState.Value.Copyright</a>*@
+            </div>
+        </div>
+    </FooterRender>
+    </AntDesign.ProLayout.BasicLayout>
+</CascadingValue>
+<SettingDrawer />
